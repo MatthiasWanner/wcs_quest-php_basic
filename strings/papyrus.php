@@ -5,7 +5,7 @@ function decodeMessage($string){
     $substring = substr($string, 5, $keyNumber);
     $filteredString = str_replace('@#?', ' ', $substring);
     return strrev($filteredString);
-}
+};
 
 $secretMessage = decodeMessage("0@sn9sirppa@#?ia'jgtvryko1") // output "j'ai appris"
 . ' ' 
@@ -16,6 +16,6 @@ $secretMessage = decodeMessage("0@sn9sirppa@#?ia'jgtvryko1") // output "j'ai app
 ?>
 
 <p>
-    <?= $secretMessage ?> 
+    <?= $secretMessage; ?> 
     <!-- J'ai appris toutes les ficelles des strings -->
 </p>
